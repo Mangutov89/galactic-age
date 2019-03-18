@@ -7,15 +7,15 @@ export class GalacticAge {
     return mercuryAge;
   }
   ageOnVenus() {
-    const venusAge = (this.age * 365) / 88;
+    const venusAge = (this.age * 365) / 226;
     return venusAge;
   }
   ageOnMars() {
-    const marsAge = (this.age * 365) / 88;
+    const marsAge = (this.age * 365) / 686;
     return marsAge;
   }
   ageOnJupiter() {
-    const jupiterAge = (this.age * 365) / 88;
+    const jupiterAge = (this.age * 365) / 4328;
     return jupiterAge;
   }
 }

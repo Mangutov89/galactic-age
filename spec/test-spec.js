@@ -1,22 +1,27 @@
-import { ageOnMercury, ageOnVenus, ageOnMars, ageOnJupiter } from './../src/business.js';
+import { GalacticAge } from './../src/business.js';
 
-describe('Calendar', function() {
+describe('GalacticAge', function() {
 
-  it('should test if year is leap year',
+  it('should test age on Mercury',
   function() {
-    var checkYear = new Calendar(1, 1, 400);
-    expect(checkYear.leapYear()).toEqual(true)
+    var checkMercury = new GalacticAge(30);
+    expect(checkMercury.ageOnMercury()).toEqual(124.43181818181819)
   });
 
-  it('should test if date is month',
+  it('should test age on Venus',
   function() {
-    var checkMonth = new Calendar(1, 1, 400);
-    expect(checkMonth.checkMonth()).toEqual(true)
+    var checkVenus = new GalacticAge(30);
+    expect(checkVenus.ageOnVenus()).toEqual(48.45132743362832)
   });
 
-  it('should test if date is day',
+  it('should test age on Mars',
   function() {
-    var checkDay = new Calendar(1, 1, 400);
-    expect(checkDay.checkDay()).toEqual(true)
+    var checkMars = new GalacticAge(30);
+    expect(checkMars.ageOnMars()).toEqual(15.962099125364432)
+  });
+  it('should test age on Jupiter',
+  function() {
+    var checkJupiter = new GalacticAge(30);
+    expect(checkJupiter.ageOnJupiter()).toEqual(2.53003696857671)
   });
 });
