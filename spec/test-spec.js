@@ -24,4 +24,9 @@ describe('GalacticAge', function() {
     var checkJupiter = new GalacticAge(30);
     expect(checkJupiter.ageOnJupiter()).toEqual(2.53003696857671)
   });
+  it('should test age on Jupiter',
+  function() {
+    var checkJupiter = new GalacticAge(30);
+    expect(checkJupiter.ageOnJupiter()).toEqual(5)
+  });
 });

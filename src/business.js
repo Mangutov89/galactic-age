@@ -1,6 +1,7 @@
 export class GalacticAge {
-  constructor(age) {
+  constructor(age, race) {
     this.age = age;
+    this.race = race;
   }
   ageOnMercury() {
     const mercuryAge = (this.age * 365) / 88;
@@ -17,6 +18,19 @@ export class GalacticAge {
   ageOnJupiter() {
     const jupiterAge = (this.age * 365) / 4328;
     return jupiterAge;
+  }
+  lifeExpectancy() {
+    if (this.race === "Asian") {
+      this.age + 10;
+    } else if (this.race === "Caucasian") {
+      this.age + 5;
+    } else if (this.race === "African-American") {
+      this.age + 2;
+    } else if (this.race === "Indian") {
+      this.age + 8;
+    } else if (this.race === "Middle-Eastern") {
+      this.age +
+    }
   }
 }
 
