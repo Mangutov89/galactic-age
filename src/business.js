@@ -2,6 +2,7 @@ export class GalacticAge {
   constructor(age, ethnicity) {
     this.age = age;
     this.ethnicity = ethnicity;
+    this.averageLifeExpectancy = 80;
   }
   ageOnMercury() {
     const mercuryAge = (this.age * 365) / 88;
@@ -21,15 +22,20 @@ export class GalacticAge {
   }
   lifeExpectancy() {
     if (this.ethnicity === "Asian") {
-      this.age + 20;
+      const avgAsianAge = this.averageLifeExpectancy + 12;
+      return avgAsianAge;
     } else if (this.ethnicity === "Caucasian") {
-      this.age + 10;
+      const avgCaucasianAge = this.averageLifeExpectancy + 10;
+      return avgCaucasianAge;
     } else if (this.ethnicity === "African-American") {
-      this.age + 5;
+      const avgAfricanAge = this.averageLifeExpectancy + 9;
+      return avgAfricanAge;
     } else if (this.ethnicity === "Indian") {
-      this.age + 15;
+      const avgIndianAge = this.averageLifeExpectancy + 12;
+      return avgIndianAge;
     } else if (this.ethnicity === "Middle-Eastern") {
-      this.age + 5;
+      const avgMiddleAge = this.averageLifeExpectancy + 9;
+      return avgMiddleAge;
     }
   }
 }
